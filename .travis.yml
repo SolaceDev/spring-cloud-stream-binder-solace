@@ -1,6 +1,8 @@
 language: java
 dist: trusty
 sudo: false
-script: mvn clean package
+script: 
+  - mvn dependency:tree
+  - mvn clean package
 jdk: 
   - oraclejdk8
