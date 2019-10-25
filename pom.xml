@@ -80,6 +80,13 @@
         <artifactId>spring-cloud-stream-binder-test</artifactId>
         <version>${spring-cloud-stream.version}</version>
         <scope>test</scope>
+        <exclusions>
+               <exclusion> 
+			<!-- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test , as it contains !/org/json/JSONObject.class -->
+                       <groupId>com.vaadin.external.google</groupId>
+                       <artifactId>android-json</artifactId>
+               </exclusion>
+       </exclusions>
       </dependency>
 
       <dependency>
