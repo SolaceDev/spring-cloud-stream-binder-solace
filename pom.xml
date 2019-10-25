@@ -67,6 +67,12 @@
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-stream</artifactId>
         <version>${spring-cloud-stream.version}</version>
+        <exclusions>
+               <exclusion>
+                       <groupId>com.fasterxml.jackson.core</groupId>
+                       <artifactId>jackson-databind</artifactId>
+               </exclusion>
+       </exclusions>
       </dependency>
 
       <dependency>
